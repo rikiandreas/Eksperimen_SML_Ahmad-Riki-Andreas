@@ -12,7 +12,7 @@ from sklearn.metrics import (
     f1_score
 )
 
-mlflow.set_tracking_uri("file:///content/mlruns")
+mlflow.set_tracking_uri("file:./mlruns")
 mlflow.set_experiment("Breast Cancer Classification")
 
 df = pd.read_csv("breast_cancer_preprocessing.csv")
